@@ -15,5 +15,6 @@ class VerificationException extends \Exception
             'file' => $this->getFile(),
             'code' => $this->getCode(),
         ];
+        var_dump($_SESSION['VERIFICATION_EXCEPTION']);
     }
 }

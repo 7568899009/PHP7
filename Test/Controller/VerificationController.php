@@ -1,4 +1,5 @@
 <?php
 namespace Exception\Test\Controller;
+use Exception\Test\Service\VerificationService;
 include 'boot.php';
-(new \Exception\Test\Service\VerificationService())->is_code();
+(new VerificationService())->is_code();

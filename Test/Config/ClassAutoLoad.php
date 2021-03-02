@@ -6,8 +6,8 @@ class ClassAutoLoad
 
     private function autoload(string $className)
     {
-        $file=  $className .'.php';
-        $file = '../'.str_replace('\\', '/', $className) . '.php';
+        $file = str_replace('\\','/', $className) . '.php';
+        $file = '..' . substr($file, '14');
         if (!is_file($file)) {
             throw new \Exception("file don't exists");
         }

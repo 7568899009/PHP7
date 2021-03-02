@@ -17,6 +17,7 @@ class LoginService
      */
     public function __construct()
     {
+
         $this->user = $_POST['user'];
         $this->password = $_POST['password'];
 

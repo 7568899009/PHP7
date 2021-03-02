@@ -11,7 +11,7 @@ class LoginException extends \Exception
             'line' => $this->getLine(),
             'file' => $this->getFile(),
             'code' => $this->getCode(),
-
         ];
+      var_dump($_SESSION['LOGIN_EXCEPTION']);
     }
 }
